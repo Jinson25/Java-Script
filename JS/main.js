@@ -2,6 +2,6 @@ document.getElementById("tipo1").innerHTML = "Ejemplo del tipo 1 del Output docu
 
 document.write("Ejemplo de texto con document.write(texto) solo se usa para pruebas");
 
-window.alert("Ejemplo de output con window.alert");
+//window.alert("Ejemplo de output con window.alert");
 
 console.log("Hola Mundo");

@@ -1,3 +1,50 @@
-*{
-    padding: 50px;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Fredoka:wght@300;400&family=Noto+Sans:ital@1&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primario: rgb(43, 255, 0);
+  --color-secundario: rgba(255, 255, 255, 0.979);
+  --violeta: #f4f;
+  --naranja: #ff8800;
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 15px;
+}
+/*menu*/
+.menu {
+  width: 100%;
+  position: sticky;
+  text-align: center;
+  background-color: var(--naranja);
+  padding: 4px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.menu a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: var(--color-secundario);
+  padding: 15px;
+  transition: 0.5s ease all;
+}
+.menu a:hover {
+  letter-spacing: 4px;
+  transform: translateY(18px);
+  border-bottom: 1px solid var(--color-primario);
+  background-color: var(--naranja);
+}
+.contenedor {
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.titulo {
+    text-align: center;
+    align-items: center;
 }
