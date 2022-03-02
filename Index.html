@@ -7,39 +7,128 @@
 </head>
 
 <body>
-    <header>
+    <header class="inicio">
         <nav class="menu">
-            <a href="#">Introducción</a>
-            <a href="#">Ejercicio 1</a>
-            <a href="#">Ejercicio 2</a>
-            <a href="#">Ejercicio 3</a>
-            <a href="#">Ejercicio 4</a>
-            <a href="#">Ejercicio 5</a>
-            <a href="#">Ejercicio 6</a>
+            <a href="#">Pagina 1</a>
+            <a href="#">Pagina 2</a>
+            <a href="#">Pagina 3</a>
+            <a href="#">Pagina 4</a>
+            <a href="#">Pagina 5</a>
+            <a href="#">Pagina 6</a>
+            <a href="#">pagina 7</a>
         </nav>
+        <section class="inicio-contenedor contenedor">
+            <h1 class="inicio-titulo">FUNDAMENTOS DE PROGRAMACION JAVA SCRIPT</h1>
+            <p class="inicio-parrafo">Conoce los diferentes tipos de ejercicios ya realizados </p>
+        </section>
     </header>
+
     <div class="contenedor">
-        <h1 class="titulo">FUNDAMENTOS DE PROGRAMACION JS</h1>
-        <main class="inicio">
-            <p>Tipos de entrega de datos</p>
+        <main>
+            <h2 class="subtitulo">Tipos de entrega de datos</h2>
             <section>
-                <p>Tipo 1</p>
+                <p>Tipo 1:</p>
                 <p id="tipo1"></p>
-            </section>
-            <section>
-                <p>Tipo 2</p>
+
+                <p>Tipo 2:</p>
+                <p id="tipo2"></p>
+
+                <p>Tipo 3:</p>
+                <p id="tipo3"></p>
+
+                <p>Tipo 4:</p>
                 <p></p>
+
             </section>
             <script src="/JS/main.js"></script>
         </main>
-        <div class="ejercicio1">
-            <h2 id="n1"></h2>
-            <h2 id="n2"></h2>
-            <h2 id="n3"></h2>
-            <h2 id="p"></h2>
-            <p id="salida"></p>
-            <script src="/JS/ejercicio1.js"></script>
+
+        <div id="Ejercicio1">
+            <h2 class="subtitulo">Ejercicio 1</h2>
+            <section>
+                <h3>Ingrese dos números y realice una suma con los mismos</h3>
+                <a href="#Ejercicio1" id="boton1" class="btn">¡Ejecuta ejercicio1!</a>
+                <h3>Numero 1:</h3>
+                <p id="n1"></p>
+                <h3>Numero 2:</h3>
+                <p id="n2"></p>
+                <h3>La Suma es:</h3>
+                <p id="sum"></p>
+            </section>
+            <script src="/JS/ejercicio 1.js"></script>
         </div>
+
+        <div id="Ejercicio2">
+            <h2 class="subtitulo">Ejercicio 2</h2>
+            <section>
+                <h3>Realizar un programa en el que se ingresen los datos de un
+                    trabajador y nos de como resultado el sueldo que debe obtener en base a sus horas
+                    trabajadas.
+                </h3>
+                <a href="#Ejercicio2" id="boton2" class="btn">¡Ejecuta ejercicio2!</a>
+                <p>Nombre del trabajador:</p>
+                <p id="nombre"></p>
+                <p>¿Horas trabajadas en el mes?</p>
+                <p id="horasTrabajadas"></p>
+                <p>¿Cuanto gana por hora?</p>
+                <p id="valorHora"></p>
+                <p id="resultado2"></p>
+            </section>
+            <script src="/JS/ejercicio2.js"></script>
+        </div>
+
+        <div id="Ejercicio3">
+            <h2 class="subtitulo">Ejercicio 3</h2>
+            <section>
+                <h3>Problema 3 Realizar un programa en el que se calcule la cuenta a pagar de un
+                    producto en base a su precio y cantidad después sacar el 10% de descuento para el
+                    total a pagar.
+                </h3>
+                <a href="#Ejercicio3" id="boton3" class="btn">¡Ejecuta ejercicio3!</a>
+                <p>Nombre del producto</p>
+                <p id="nombreProducto"></p>
+                <p>Costo unitario</p>
+                <p id="costoUnitario"></p>
+                <p>"Unidades pedidas"</p>
+                <p id="unidades"></p>
+                <p id="subTotal"></p>
+                <p id="descuento"></p>
+                <p id="total"></p>
+            </section>
+            <script src="/JS/ejercicio3.js"></script>
+        </div>
+        <div id="Ejercicio4">
+            <h2 class="subtitulo">Ejercicio 4</h2>
+            <section>
+                <h3> Calcular el área de un rectángulo, en un programa.</h3>
+                <a href="#Ejercicio4" id="boton4" class="btn">¡Ejecuta ejercicio4!</a>
+                <p>Cual es la base del rectangulo"</p>
+                <p id="base"></p>
+                <p>Cual es la altura del rectangulo</p>
+                <p id="altura"></p>
+                <p id="area"></p>
+                <p id="perimetro"></p>
+            </section>
+            <script src="/JS/ejercicio4.js"></script>
+        </div>
+        <div id="Ejercicio5">
+            <h2 class="subtitulo">Ejercicio 5</h2>
+        </div>
+        <section>
+            <h3>Hacer un programa para calcular el promedio de 3 notas, si el
+                promedio es menor a 6.95 se lo considera REPROBADO caso contrario Aprobado.
+            </h3>
+            <a href="#Ejercicio5" id="boton5" class="btn">¡Ejecuta ejercicio5!</a>
+            <p>Nota 1</p>
+            <p id="nota1"></p>
+            <p>Nota 2</p>
+            <p id="nota2"></p>
+            <p>Nota 3</p>
+            <p id="nota3"></p>
+            <p id="promedio"></p>
+            <p id="mensaje"></p>
+        </section>
+        <script src="/JS/ejercicio5.js"></script>
     </div>
 </body>
 
