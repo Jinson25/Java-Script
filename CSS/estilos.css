@@ -10,6 +10,7 @@
   --color-secundario: rgba(255, 255, 255, 0.979);
   --violeta: #f4f;
   --naranja: #ff8800;
+  --negro: rgb(36, 35, 35);
 }
 body{
     font-family: 'Noto Sans', sans-serif;
@@ -83,4 +84,18 @@ body{
   font-size: 2rem;
   margin-bottom: 25px;
   text-align: center;
+}
+.btn{
+  display: inline-block;
+  padding: 15px;
+  margin: 15px;
+  background-color: var(--color-primario);
+  color: var(--negro);
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+}
+.btn:hover{
+  background-color: var(--naranja);
+  color: var(--color-secundario);
 }
