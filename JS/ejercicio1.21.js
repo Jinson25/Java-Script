@@ -4,9 +4,10 @@ enlace21.addEventListener('click', () => {
     b = n1.length;
     a = 1;
     x = 0;
+    var y = "";
     if ((n1.length == 4) || (n1.length == 5)) {
         while (a < b) {
-            if (String(n1, a, a) !== String(n1, b, b)) {
+            if (y.substring(n1, a, a) !== y.substring(n1, b, b)) {
                 x += 1;
             }
             a += 1;
