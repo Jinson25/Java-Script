@@ -1,19 +1,43 @@
-const enlace19 = document.getElementById("boton19");
+const enlace19 = document.getElementById("boton19"); 
 enlace19.addEventListener('click', () => {
-    const numero1 = prompt("Ingresa un numero a ordenar:");
-    const numero2 = prompt("Ingresa el segundo numero:");
-    const numero3 = prompt("Ingresa el tercer numero");
-
-    if (numero1 > numero2) {
-
-        if (numero1 > numero3) {
-            const  nmayor1 = "Numero 1 es mayor" + numero1
-        } else if ( numero2 > numero3) {
-            const nmayor2 = "Numero 2 es mayor a numero 3" + numero2
-        }
-        document.getElementById("descendente").innerHTML = "La secuencia decendete es: " + numero1 +">"+ numero2 +">"+ numero3
-
-    } 
-
-    
+var a = new Number();
+	var i = new Number();
+	var j = new Number();
+	var k = new Number();
+	var n = new Number();
+	var p = new Number();
+	var caja = new Number();
+	var numdim = new Number();
+	numdim = Number(prompt("Escribir en numero de datos a ordenar"));
+	var a = new Array(30);
+	p = 1;
+	for (p=1;p<=numdim;p++) {
+		a[p] = Number(prompt("Ingrese el numero " + p));
+	}
+	for (k=1;k<=numdim;k++) {
+		for (j=1;j<=numdim-1;j++) {
+			if ((a[j]>a[j+1])) {
+				caja = a[j];
+				a[j] = a[j+1];
+				a[j+1] = caja;
+			}
+		}
+	}
+	document.write("Los números en orden ascendente son:",'<BR/>');
+	for (i=1;i<=numdim;i++) {
+		document.write(a[i],'<BR/>');
+	}
+	for (k=1;k<=numdim;k++) {
+		for (j=1;j<=numdim-1;j++) {
+			if ((a[j]<a[j+1])) {
+				caja = a[j];
+				a[j] = a[j+1];
+				a[j+1] = caja;
+			}
+		}
+	}
+	document.write("Los números en orden Descendente son:",'<BR/>');
+	for (i=1;i<=numdim;i++) {
+		document.write(a[i],'<BR/>');
+	}
 });

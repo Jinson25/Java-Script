@@ -1,25 +1,26 @@
-const enlace20 = document.getElementById("boton20");
-enlace20.addEventListener('click', () => {
-    const n1 = prompt("Ingresa un numero");
-    b = n1.length;
-    a = 1;
-    x = 0;
-    if (n1.length == 3) {
-        while (a < b) {
-            if (String(n1, a, a) !== String(n1, b, b)) {
-                x += 1;
-            }
-            a += 1;
-            b -= 1;
-        }
-        if (x===0) {
-            document.getElementById("polindromo").innerHTML = "EL numero " + n1 + " es polindromo"
+const boton20 = document.getElementById("boton20");
+boton20.addEventListener('click', () => {
+    var num, c, num1;
+    num = prompt("Ingrese un número de 3 dijitos");
+    num1 = num;
+    c = 0;
+
+
+    if (num.length == 3) {
+        do {
+            c = (c * 10) + (num % 10);
+            num = Math.trunc(num / 10);
+        } while (num > 0);
+        document.getElementById('numeror').innerHTML = "El número invertido es: " + c
+        if (c == num1) {
+            document.getElementById('polindromo').innerHTML = "Si es un número Palíndromo"
         } else {
-            document.getElementById("polindromo").innerHTML = "EL numero " + n1 + " no es polindromo"
+            document.getElementById('nopolindromo').innerHTML = "No es un número Palíndromo"
         }
-    }else {
-        document.getElementById("error").innerHTML = "EL numero " + n1 + " no es valido solo debe ser de tres cifra"
+
+        
+    } else {
+
+        document.getElementById("error").innerHTML = "EL numero " + num + " no es valido solo debe ser de 3 cifras"
     }
-
-
 });
